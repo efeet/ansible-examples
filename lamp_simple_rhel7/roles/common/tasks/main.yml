@@ -19,3 +19,6 @@
   
 - name: Start Firewalld
   service: name=firewalld state=started enabled=yes
+  
+- name: Start SELinux
+- selinux: state=permissive
