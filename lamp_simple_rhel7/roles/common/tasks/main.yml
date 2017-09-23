@@ -21,4 +21,4 @@
   service: name=firewalld state=started enabled=yes
   
 - name: Start SELinux
-  selinux: state=permissive
+  selinux: policy=targeted state=permissive
