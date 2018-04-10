@@ -6,7 +6,7 @@
   template: src=default.conf dest=/etc/nginx/conf.d/default.conf
   notify: restart nginx
   
-  - name: Comment Listener within nginx.conf
+- name: Comment Listener within nginx.conf
   replace:
     path: /etc/nginx/nginx.conf
     regexp: 'listen       80 default_server;'
